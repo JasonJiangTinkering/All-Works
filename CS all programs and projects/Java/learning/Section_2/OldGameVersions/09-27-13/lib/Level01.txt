@@ -1,0 +1,12 @@
+Ball 210 600 N
+
+Goal 670 520
+
+BlueBumper 120 330
+BlueBumper 420 330
+
+RedBumper 420 570
+RedBumper 420 90
+RedBumper 720 90
+
+GreenBumper 1400 150
