@@ -1,0 +1,58 @@
+
+
+
+
+}
+p {
+   background-color:#FFFFFF;
+}
+a {
+  font-size:120%;
+}
+
+body {
+   background-image:"http://images6.fanpop.com/image/photos/36800000/PR-Super-samurai-the-power-ranger-36882449-500-260.jpg";
+   font-size:150%;
+   font-family:Courier;
+
+
+}
+
+li a {
+    display: block;
+    color: #666;
+    padding: 6px 14px;
+    text-decoration: none;
+	border: 1px solid #F0AC53;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+	
+}
+ul {
+	border: 4px solid #F0AC53;
+    margin-top:auto;
+	margin-bottom:auto;
+	overflow: auto;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #000;
+	
+}
+
+p{
+	margin:  0% 2% 0% 2%;
+}
+div {
+  	background-color:#FFFFFF;
+    margin:1% 30% 7% 30%;
+}
+h1{
+	border:#FFFFFF;
+color: white;
+font-size:100%;}
+
