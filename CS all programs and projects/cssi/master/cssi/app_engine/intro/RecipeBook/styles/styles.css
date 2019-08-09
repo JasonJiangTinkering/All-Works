@@ -1,0 +1,58 @@
+div
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid blue;
+	width: 30%;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}	
+#name{
+	font-family: cursive;
+	text-align: center;
+	
+	text-shadow: 2px 2px #1a1a1a;
+
+}
+
+select
+{
+	
+	border-radius: 30px;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	width: 200px;
+}
+input{
+	border-radius: 30px;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+#head{
+	color: #ccf3ff;
+	font-size: 60px;
+}
+h3{
+	font-size: 30px;
+	text-align: center;
+	font-family: cursive;
+}
+
+#list{
+	
+	padding: 20px;
+	margin: 30px;
+	text-shadow: 2px 2px white;
+	font-size: 30px;
+	list-style-type: upper-roman;
+}

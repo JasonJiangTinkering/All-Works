@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <h3>Task Viewer</h3>
+    <ul>
+        {% for i in entities%}
+        <li>
+            <div id="nameTag" class="center">
+                {{i.name}}
+            </div>
+            <div id="groupTag" class="center">
+                {{i.group}}
+            </div>
+            {% if i.difficulty == "easy" %}
+            <div class="easy center" id="priorityTag">
+                Easy
+            </div>
+            {% elif i.difficulty == "middle" %}
+            <div class="middle center" id="priorityTag">
+                Intermediate
+            </div>
+            {% else %}
+            <div class="hard center" id="priorityTag">
+                Hard
+            </div>
+            {% endif %}
+            <div id="taskTag" class="center">
+                {{i.task}}
+            </div>
+            <input type="button" value="Completed" />
+        </li>
+        {% endfor%}
+    </ul>
+
+    <h3>Add Task</h3>
+    <form>
+        <label>Student:</label>
+        <select name="name">
+            {% for i in names%}
+            <option value={{i}}>{{i}}</option>
+            {% endfor%}
+        </select>
+        <br /><br />
+        <label>Task:</label>
+        <input type="text" name="task"/>
+        <br /><br />
+        <label>Priority:</label>
+        <select name="difficulty">
+            <option value="0">Easy</option>
+            <option value="1">Intermediate</option>
+            <option value="2">Hard</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

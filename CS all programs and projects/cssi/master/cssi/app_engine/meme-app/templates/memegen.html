@@ -1,0 +1,35 @@
+<head>
+        <link rel="stylesheet" href="/cssfiles/meme.css">
+</head>
+<body>
+    <p>test</p>
+    <form action="/" method="POST">
+        <fieldset>
+            <legend>What would you like to write</legend>
+            <input required type="text" name = "memename">
+        </fieldset>
+        <fieldset>
+            <legend>What meme would you like</legend>
+            <select required name = 'pics'>
+                <option value="meme1">distracted boyfriend</option>
+                <option value="meme2">null</option>
+            </select>
+            
+        </fieldset>
+        <input type="submit" value="Submit">
+    
+    </form>
+    <center>
+    <label id="abs">{{test}}</label>
+    <!--{if drake == "True"}
+    <label id="abs" id="drake">{{test[1]}}</label>
+  
+    -->        
+    
+    {%if pic != 0 %}
+    <img src={{pic}} height="300px">
+    {{pic}}
+    {%endif%}
+
+    </center>
+</body>

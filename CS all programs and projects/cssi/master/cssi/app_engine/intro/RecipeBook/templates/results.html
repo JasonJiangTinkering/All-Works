@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: #0099cc;
+            
+        }
+        head{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+	<head>
+		<title>Recipe Book</title>
+		<link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+	</head>
+	<body onload="NameColor()">
+		<center>
+		<h1 id= "head">Recipe Book</h1>
+		</center>
+
+        <h1 id="name">{{name}}</h1>
+
+        <h3>Ingredients</h3>
+        <ul id="list">
+            {% for i in ingredients %}
+                <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+
+        <div>
+			<form method="post">
+				<select name="food">
+					<option value="recipe1">Lemonde</option> 
+					<option value="recipe2">Naan</option> 
+					<option value="recipe3">Alfredo Sauce</option>
+				</select>
+				<br /><br />
+				<input type="submit" value="Load" />
+			</form>
+        </div>  
+        <script src="/scripts/script.js"></script>      
+	</body>
+</html>

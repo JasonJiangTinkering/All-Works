@@ -1,0 +1,62 @@
+.easy
+{
+    background-color: yellow;
+}
+
+.middle
+{
+    background-color: orange;
+}
+
+.hard
+{
+    background-color: red;
+}
+
+ul
+{
+    list-style-type: none;
+    width: 100%;
+}
+
+li
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+}
+
+div
+{
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 2px;
+}
+
+#nameTag
+{
+    width: 200px;
+}
+
+#groupTag
+{
+    width: 60px;
+}
+
+#priorityTag
+{
+    width: 80px;
+}
+
+#taskTag
+{
+    width: 600px;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
